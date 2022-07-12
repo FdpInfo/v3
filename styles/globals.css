@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  background: -webkit-linear-gradient(315deg,#43ff8b, #0064fa);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heartcolor {
+  animation: heartcolor-anim 1s infinite;
+}
+
+@keyframes heartcolor-anim {
+  0% { color: hsl(--pc); }
+  20% { color: #ff0000; }
+  100% { color: hsl(--pc); }
+}
